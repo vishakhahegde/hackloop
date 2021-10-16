@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Which Austin Musical Group...</title>
+<style>
+body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 60%;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+}
+
+#response {
+    display: none;
+}
+
+label {
+width: 150px;
+display: inline-block;
+}
+
+button {
+display: block;
+margin-top: 20px;
+
+}
+
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header"><h1>Anxiety Test</h1></div>
+
+<form  id="form1" onsubmit="return false">
+<p>Numb or tingling ?</p>
+<label><input type="radio" name="q1" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q1" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q1" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q1" id="Not" value="1" />Not At All</label>
+
+<p>Feeling hot ?</p>
+<label><input type="radio" name="q2" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q2" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q2" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q2" id="Not" value="1" />Not At All</label>
+
+
+<p>Wobbly legs?</p>
+<label><input type="radio" name="q3" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q3" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q3" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q3" id="Not" value="1" />Not At All</label>
+
+
+<p>Unable to relax?</p>
+<label><input type="radio" name="q4" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q4" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q4" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q4" id="Not" value="1" />Not At All</label>
+
+
+<p>Fear of the worst happening?</p>
+<label><input type="radio" name="q5" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q5" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q5" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q5" id="Not" value="1" />Not At All</label>
+
+
+<p>Dizzy or lightheaded?</p>
+<label><input type="radio" name="q6" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q6" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q6" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q6" id="Not" value="1" />Not At All</label>
+
+
+<p>Heart pounding/racing?</p>
+<label><input type="radio" name="q7" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q7" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q7" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q7" id="Not" value="1" />Not At All</label>
+
+
+<p>Unsteady?</p>
+<label><input type="radio" name="q8" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q8" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q8" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q8" id="Not" value="1" />Not At All</label>
+
+
+<p>Terrified or afraid?</p>
+<label><input type="radio" name="q9" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q9" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q9" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q9" id="Not" value="1" />Not At All</label>
+
+
+<p>Nervous?</p>
+<label><input type="radio" name="q10" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q10" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q10" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q10" id="Not" value="1" />Not At All</label>
+
+
+<p>Feeling of choking?</p>
+<label><input type="radio" name="q11" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q11" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q11" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q11" id="Not" value="1" />Not At All</label>
+
+
+<p>Hands trembling?</p>
+<label><input type="radio" name="q12" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q12" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q12" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q12" id="Not" value="1" />Not At All</label>
+
+
+<p>Shaky / unsteady?</p>
+<label><input type="radio" name="q13" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q13" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q13" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q13" id="Not" value="1" />Not At All</label>
+
+
+<p>Fear of losing control?</p>
+<label><input type="radio" name="q14" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q14" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q14" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q14" id="Not" value="1" />Not At All</label>
+
+
+<p>Difficulty in breathing?</p>
+<label><input type="radio" name="q15" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q15" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q15" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q15" id="Not" value="1" />Not At All</label>
+
+
+<p>Fear of dying?</p>
+<label><input type="radio" name="q16" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q16" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q16" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q16" id="Not" value="1" />Not At All</label>
+
+
+<p>Indigestion?</p>
+<label><input type="radio" name="q17" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q17" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q17" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q17" id="Not" value="1" />Not At All</label>
+
+
+<p>Scared?</p>
+<label><input type="radio" name="q18" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q18" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q18" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q18" id="Not" value="1" />Not At All</label>
+
+
+<p>Faint / lightheaded?</p>
+<label><input type="radio" name="q19" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q19" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q19" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q19" id="Not" value="1" />Not At All</label>
+
+
+<p>Face flushed?</p>
+<label><input type="radio" name="q20" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q20" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q20" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q20" id="Not" value="1" />Not At All</label>
+
+
+<p>Hot/Cold sweats?</p>
+<label><input type="radio" name="q21" id="Severely" value="4" />Severely – it bothered me a lot</label>
+<label><input type="radio" name="q21" id="Moderately" value="3" />Moderately – it wasn’t pleasant at times</label>
+<label><input type="radio" name="q21" id="Old" value="2" />Mildly but it didn’t bother me much.</label>
+<label><input type="radio" name="q21" id="Not" value="1" />Not At All</label>
+
+
+
+<button type="submit" value="Submit">Submit</button>
+</form>
+
+<p id="answer"></p>
+<p id="answer2"></p>
+
+</div>
+<script>
+
+
+	document.getElementById("form1").onsubmit=function() {
+	   //displays the response DOM element
+    //document.getElementById("response").style.display = "block";
+
+    //resets the DOM element on submit
+    //document.getElementById("answer").innerHTML = "";
+
+	  q1 = document.querySelector('input[name = "q1"]:checked').value;
+	  q2 = document.querySelector('input[name = "q2"]:checked').value;
+	  q3 = document.querySelector('input[name = "q3"]:checked').value;
+      q4 = document.querySelector('input[name = "q4"]:checked').value;
+      q5 = document.querySelector('input[name = "q5"]:checked').value;
+      q6 = document.querySelector('input[name = "q6"]:checked').value;
+      q7 = document.querySelector('input[name = "q7"]:checked').value;
+      q8 = document.querySelector('input[name = "q8"]:checked').value;
+      q9 = document.querySelector('input[name = "q9"]:checked').value;
+      q10 = document.querySelector('input[name = "q10"]:checked').value;
+      q11 = document.querySelector('input[name = "q11"]:checked').value;
+      q12 = document.querySelector('input[name = "q12"]:checked').value;
+      q13 = document.querySelector('input[name = "q13"]:checked').value;
+      q14 = document.querySelector('input[name = "q14"]:checked').value;
+      q15 = document.querySelector('input[name = "q15"]:checked').value;
+      q16 = document.querySelector('input[name = "q16"]:checked').value;
+      q17 = document.querySelector('input[name = "q17"]:checked').value;
+      q18 = document.querySelector('input[name = "q18"]:checked').value;
+      q19 = document.querySelector('input[name = "q19"]:checked').value;
+      q20 = document.querySelector('input[name = "q20"]:checked').value;
+      q21 = document.querySelector('input[name = "q21"]:checked').value;
+
+      total= q1+q2+q3+q4+q5+q6+q7+q8+q9+q10+q11+q12+q13+q14+q15+q16+q17+q18+q19+q20+q21;
+      
+	   //document.getElementById("answer").innerHTML = total;
+
+	   if(total>=21 && total<31 ) {
+document.getElementById("answer2").innerHTML = "Cool as a cucumber.";
+}
+
+   if(total >=31 && total < 41) {
+document.getElementById("answer2").innerHTML = "Good enough.";
+}
+
+    if(total >=41 && total < 51) {
+document.getElementById("answer2").innerHTML = "Meditate.";
+}
+
+    if(total >=51 && total < 61) {
+document.getElementById("answer2").innerHTML = "Change lifestyle.";
+}
+
+    if(total >=61 && total < 71) {
+document.getElementById("answer2").innerHTML = "Seek help from loved ones.";
+}
+
+    if(total >=71 && total < 81) {
+document.getElementById("answer2").innerHTML = "Therapist. Get help.";
+}
+
+	if(total >=81) {
+document.getElementById("answer2").innerHTML = "Emergency help. You are gone.";
+}
+       //event.preventDefault();
+	   return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+
+
+</script>
+
+</body>
+</html>
+
+
